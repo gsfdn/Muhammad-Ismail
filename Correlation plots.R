@@ -1,0 +1,15 @@
+library(psych)
+S1=scan()
+S2=scan()
+S3=scan()
+S4=scan()
+S5=scan()
+S6=scan()
+S7=scan()
+S8=scan()
+mydata <- cbind(S1,S2,S3,S4,S5,S6,S7,S8)
+colnames(mydata) <- c("SPI-1", "SPI-3", "SPI-6","SPI-9","SPI-12","SPI-24","PMADI","LMADI")
+x11()
+pairs.panels(mydata, scale=FALSE)
+
+
